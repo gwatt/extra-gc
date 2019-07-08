@@ -1,0 +1,10 @@
+#!r6rs ; -*- mode: scheme; coding: utf-8 -*-
+(import (akku format manifest))
+
+(akku-package ("extra-gc" "0.5.0")
+  (synopsis "Extensible garbage collection for Chez Scheme")
+  (description "extra-gc provides a way to register custom collection procedures for data
+that requires specialized resource release. E.g., foreign memory, threads, etc")
+  (authors "Graham Watt")
+  (license "0BSD")
+)
