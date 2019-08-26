@@ -12,7 +12,7 @@
 
 (meta-cond
   [(threaded?)
-   (define m (make-mutex 'extra-gc))
+   (define m (make-mutex))
    (define-syntax critical
      (syntax-rules ()
        [(_ b b* ...)
